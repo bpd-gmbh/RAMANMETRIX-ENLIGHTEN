@@ -10,13 +10,15 @@ The plugin gives ENLIGHTEN a live view with preprocessed spectra and predictions
 
 ## Usage
 
-After installing ENLIGHTEN, place the plugin and the model files in the Documents folder:
+After installing ENLIGHTEN, place the plugin and the model files from `plugins/bpd` in the respective Documents subfolder:
 ```
 %USERPROFILE%\Documents\EnlightenSpectra\plugins\bpd\RAMANMETRIX.py
 %USERPROFILE%\Documents\EnlightenSpectra\plugins\bpd\model_RAMANMETRIX.pkl
 ```
-
 In the ENLIGHTEN software select plugin `bpd.RAMANMETRIX` and click on `Connect` checkbox.
+
+The provided example `model_RAMANMETRIX.pkl` includes the preprocessing pipeline and a PLS model for predicting the ethanol persentage in ethanol-water mixture.
+The model file can be replaced by any classification or regression model (with preprocessing included) created in RAMANMETRIX.
 
 ## Troubleshooting
 
@@ -25,3 +27,4 @@ you will face errors. The correct locations can be adjusted in the configuration
 ```
 %USERPROFILE%\Documents\EnlightenSpectra\plugins\bpd\RAMANMETRIX.json
 ```
+
